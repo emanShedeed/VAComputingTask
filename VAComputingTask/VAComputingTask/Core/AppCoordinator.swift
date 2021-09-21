@@ -12,6 +12,7 @@ protocol Coordinator {
     var childCoordinators: [Coordinator] { get set }
     func start()
 }
+
 class AppCoordinator: Coordinator {
     var childCoordinators = [Coordinator]()
     private var window:UIWindow
@@ -22,9 +23,9 @@ class AppCoordinator: Coordinator {
     }
     
     func start() {
-//        let customSplashCoordinator = CustomSplashCoordinator(window: window)
-//        childCoordinators.append(customSplashCoordinator)
-//        customSplashCoordinator.start()
+       let vc = ComputingViewController()
+        window.rootViewController = vc
+        window.makeKeyAndVisible()
         
     }
 }
