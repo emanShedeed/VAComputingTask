@@ -27,7 +27,34 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
+      <AdditionalOptions>
+         <AdditionalOption
+            key = "MallocStackLogging"
+            value = ""
+            isEnabled = "YES">
+         </AdditionalOption>
+         <AdditionalOption
+            key = "PrefersMallocStackLoggingLite"
+            value = ""
+            isEnabled = "YES">
+         </AdditionalOption>
+         <AdditionalOption
+            key = "MallocScribble"
+            value = ""
+            isEnabled = "YES">
+         </AdditionalOption>
+      </AdditionalOptions>
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C7C2BEF92700715A00789957"
+               BuildableName = "VAComputingTask_Tests.xctest"
+               BlueprintName = "VAComputingTask_Tests"
+               ReferencedContainer = "container:VAComputingTask.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

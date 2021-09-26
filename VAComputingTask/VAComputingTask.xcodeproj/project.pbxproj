@@ -10,12 +10,18 @@
 		C769D2DE26F9C4B4002E135B /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C769D2DD26F9C4B4002E135B /* UIView+Extension.swift */; };
 		C769D2E126F9C5BA002E135B /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C769D2E026F9C5BA002E135B /* UIColor+Extension.swift */; };
 		C769D2E326F9E231002E135B /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C769D2E226F9E231002E135B /* UITextField+Extension.swift */; };
-		C769D2E626F9E30A002E135B /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C769D2E526F9E30A002E135B /* IQKeyboardManagerSwift */; };
 		C769D2E826F9E572002E135B /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C769D2E726F9E572002E135B /* Color.xcassets */; };
+		C769D2EA26F9FC54002E135B /* AutomaticHeightTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C769D2E926F9FC54002E135B /* AutomaticHeightTableView.swift */; };
+		C769D2F226FA04D2002E135B /* OperatorResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C769D2F026FA04D2002E135B /* OperatorResultTableViewCell.swift */; };
+		C769D2F326FA04D2002E135B /* OperatorResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C769D2F126FA04D2002E135B /* OperatorResultTableViewCell.xib */; };
+		C76B4C9526FB3E7F00846C0A /* OpeartionsTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76B4C9426FB3E7F00846C0A /* OpeartionsTableViewHeader.swift */; };
+		C76B4C9726FB46ED00846C0A /* ComputingVC+TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76B4C9626FB46ED00846C0A /* ComputingVC+TableViewDelegate.swift */; };
 		C7867B5426F775AF00578744 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7867B5326F775AF00578744 /* AppDelegate.swift */; };
 		C7867B5D26F775B500578744 /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7867B5C26F775B500578744 /* Icons.xcassets */; };
 		C7867B6026F775B500578744 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7867B5E26F775B500578744 /* LaunchScreen.storyboard */; };
 		C7867B6B26F7765600578744 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7867B6A26F7765600578744 /* AppCoordinator.swift */; };
+		C7C2BEF52700563B00789957 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C7C2BEF42700563B00789957 /* IQKeyboardManagerSwift */; };
+		C7C2BEFD2700715A00789957 /* VAComputingTask_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C2BEFC2700715A00789957 /* VAComputingTask_Tests.swift */; };
 		C7E8DA2D26F8B8E700CF6F99 /* ComputingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E8DA2B26F8B8E700CF6F99 /* ComputingViewController.swift */; };
 		C7E8DA2E26F8B8E700CF6F99 /* ComputingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7E8DA2C26F8B8E700CF6F99 /* ComputingViewController.xib */; };
 		C7E8DA3426F8B92400CF6F99 /* ComputingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E8DA3326F8B92400CF6F99 /* ComputingPresenter.swift */; };
@@ -23,17 +29,35 @@
 		C7E8DA3926F8E3D300CF6F99 /* OperationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E8DA3826F8E3D300CF6F99 /* OperationType.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		C7C2BEFF2700715A00789957 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7867B4826F775AF00578744 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C7867B4F26F775AF00578744;
+			remoteInfo = VAComputingTask;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		C769D2DD26F9C4B4002E135B /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		C769D2E026F9C5BA002E135B /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		C769D2E226F9E231002E135B /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
 		C769D2E726F9E572002E135B /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
+		C769D2E926F9FC54002E135B /* AutomaticHeightTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomaticHeightTableView.swift; sourceTree = "<group>"; };
+		C769D2F026FA04D2002E135B /* OperatorResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorResultTableViewCell.swift; sourceTree = "<group>"; };
+		C769D2F126FA04D2002E135B /* OperatorResultTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OperatorResultTableViewCell.xib; sourceTree = "<group>"; };
+		C76B4C9426FB3E7F00846C0A /* OpeartionsTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeartionsTableViewHeader.swift; sourceTree = "<group>"; };
+		C76B4C9626FB46ED00846C0A /* ComputingVC+TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ComputingVC+TableViewDelegate.swift"; sourceTree = "<group>"; };
 		C7867B5026F775AF00578744 /* VAComputingTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VAComputingTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7867B5326F775AF00578744 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7867B5C26F775B500578744 /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
 		C7867B5F26F775B500578744 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C7867B6126F775B500578744 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C7867B6A26F7765600578744 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		C7C2BEFA2700715A00789957 /* VAComputingTask_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VAComputingTask_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7C2BEFC2700715A00789957 /* VAComputingTask_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VAComputingTask_Tests.swift; sourceTree = "<group>"; };
+		C7C2BEFE2700715A00789957 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C7E8DA2B26F8B8E700CF6F99 /* ComputingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputingViewController.swift; sourceTree = "<group>"; };
 		C7E8DA2C26F8B8E700CF6F99 /* ComputingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ComputingViewController.xib; sourceTree = "<group>"; };
 		C7E8DA3326F8B92400CF6F99 /* ComputingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputingPresenter.swift; sourceTree = "<group>"; };
@@ -46,7 +70,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C769D2E626F9E30A002E135B /* IQKeyboardManagerSwift in Frameworks */,
+				C7C2BEF52700563B00789957 /* IQKeyboardManagerSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7C2BEF72700715A00789957 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,10 +94,28 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		C769D2EF26FA04A7002E135B /* OperatorResultTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				C769D2F026FA04D2002E135B /* OperatorResultTableViewCell.swift */,
+				C769D2F126FA04D2002E135B /* OperatorResultTableViewCell.xib */,
+			);
+			path = OperatorResultTableViewCell;
+			sourceTree = "<group>";
+		};
+		C76B4C9326FB3E6100846C0A /* TableViewHeader */ = {
+			isa = PBXGroup;
+			children = (
+				C76B4C9426FB3E7F00846C0A /* OpeartionsTableViewHeader.swift */,
+			);
+			path = TableViewHeader;
+			sourceTree = "<group>";
+		};
 		C7867B4726F775AF00578744 = {
 			isa = PBXGroup;
 			children = (
 				C7867B5226F775AF00578744 /* VAComputingTask */,
+				C7C2BEFB2700715A00789957 /* VAComputingTask_Tests */,
 				C7867B5126F775AF00578744 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -75,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				C7867B5026F775AF00578744 /* VAComputingTask.app */,
+				C7C2BEFA2700715A00789957 /* VAComputingTask_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,6 +169,7 @@
 			children = (
 				C7867B6E26F7768100578744 /* Assets */,
 				C7867B6D26F7767500578744 /* Application */,
+				C769D2E926F9FC54002E135B /* AutomaticHeightTableView.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -139,6 +190,15 @@
 				C769D2E726F9E572002E135B /* Color.xcassets */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		C7C2BEFB2700715A00789957 /* VAComputingTask_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				C7C2BEFC2700715A00789957 /* VAComputingTask_Tests.swift */,
+				C7C2BEFE2700715A00789957 /* Info.plist */,
+			);
+			path = VAComputingTask_Tests;
 			sourceTree = "<group>";
 		};
 		C7E8DA2926F8AAAA00CF6F99 /* Scenes */ = {
@@ -163,8 +223,11 @@
 		C7E8DA2F26F8B8EE00CF6F99 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C76B4C9626FB46ED00846C0A /* ComputingVC+TableViewDelegate.swift */,
 				C7E8DA2B26F8B8E700CF6F99 /* ComputingViewController.swift */,
 				C7E8DA2C26F8B8E700CF6F99 /* ComputingViewController.xib */,
+				C76B4C9326FB3E6100846C0A /* TableViewHeader */,
+				C769D2EF26FA04A7002E135B /* OperatorResultTableViewCell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -203,11 +266,29 @@
 			);
 			name = VAComputingTask;
 			packageProductDependencies = (
-				C769D2E526F9E30A002E135B /* IQKeyboardManagerSwift */,
+				C7C2BEF42700563B00789957 /* IQKeyboardManagerSwift */,
 			);
 			productName = VAComputingTask;
 			productReference = C7867B5026F775AF00578744 /* VAComputingTask.app */;
 			productType = "com.apple.product-type.application";
+		};
+		C7C2BEF92700715A00789957 /* VAComputingTask_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7C2BF012700715A00789957 /* Build configuration list for PBXNativeTarget "VAComputingTask_Tests" */;
+			buildPhases = (
+				C7C2BEF62700715A00789957 /* Sources */,
+				C7C2BEF72700715A00789957 /* Frameworks */,
+				C7C2BEF82700715A00789957 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C7C2BF002700715A00789957 /* PBXTargetDependency */,
+			);
+			name = VAComputingTask_Tests;
+			productName = VAComputingTask_Tests;
+			productReference = C7C2BEFA2700715A00789957 /* VAComputingTask_Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -222,6 +303,10 @@
 					C7867B4F26F775AF00578744 = {
 						CreatedOnToolsVersion = 11.7;
 					};
+					C7C2BEF92700715A00789957 = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = C7867B4F26F775AF00578744;
+					};
 				};
 			};
 			buildConfigurationList = C7867B4B26F775AF00578744 /* Build configuration list for PBXProject "VAComputingTask" */;
@@ -234,13 +319,14 @@
 			);
 			mainGroup = C7867B4726F775AF00578744;
 			packageReferences = (
-				C769D2E426F9E30A002E135B /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				C7C2BEF32700563B00789957 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 			);
 			productRefGroup = C7867B5126F775AF00578744 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				C7867B4F26F775AF00578744 /* VAComputingTask */,
+				C7C2BEF92700715A00789957 /* VAComputingTask_Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -252,8 +338,16 @@
 			files = (
 				C7867B6026F775B500578744 /* LaunchScreen.storyboard in Resources */,
 				C769D2E826F9E572002E135B /* Color.xcassets in Resources */,
+				C769D2F326FA04D2002E135B /* OperatorResultTableViewCell.xib in Resources */,
 				C7867B5D26F775B500578744 /* Icons.xcassets in Resources */,
 				C7E8DA2E26F8B8E700CF6F99 /* ComputingViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7C2BEF82700715A00789957 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,18 +359,38 @@
 			buildActionMask = 2147483647;
 			files = (
 				C769D2E326F9E231002E135B /* UITextField+Extension.swift in Sources */,
+				C76B4C9726FB46ED00846C0A /* ComputingVC+TableViewDelegate.swift in Sources */,
 				C7867B6B26F7765600578744 /* AppCoordinator.swift in Sources */,
 				C769D2DE26F9C4B4002E135B /* UIView+Extension.swift in Sources */,
 				C7E8DA3926F8E3D300CF6F99 /* OperationType.swift in Sources */,
 				C7E8DA3426F8B92400CF6F99 /* ComputingPresenter.swift in Sources */,
 				C7867B5426F775AF00578744 /* AppDelegate.swift in Sources */,
+				C76B4C9526FB3E7F00846C0A /* OpeartionsTableViewHeader.swift in Sources */,
+				C769D2F226FA04D2002E135B /* OperatorResultTableViewCell.swift in Sources */,
+				C769D2EA26F9FC54002E135B /* AutomaticHeightTableView.swift in Sources */,
 				C7E8DA3726F8C2AE00CF6F99 /* Operation.swift in Sources */,
 				C7E8DA2D26F8B8E700CF6F99 /* ComputingViewController.swift in Sources */,
 				C769D2E126F9C5BA002E135B /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C7C2BEF62700715A00789957 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7C2BEFD2700715A00789957 /* VAComputingTask_Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C7C2BF002700715A00789957 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C7867B4F26F775AF00578744 /* VAComputingTask */;
+			targetProxy = C7C2BEFF2700715A00789957 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C7867B5E26F775B500578744 /* LaunchScreen.storyboard */ = {
@@ -340,7 +454,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -394,7 +508,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -440,6 +554,48 @@
 			};
 			name = Release;
 		};
+		C7C2BF022700715A00789957 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PU8FM4JDVA;
+				INFOPLIST_FILE = VAComputingTask_Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "BSS.VAComputingTask-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VAComputingTask.app/VAComputingTask";
+			};
+			name = Debug;
+		};
+		C7C2BF032700715A00789957 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PU8FM4JDVA;
+				INFOPLIST_FILE = VAComputingTask_Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "BSS.VAComputingTask-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VAComputingTask.app/VAComputingTask";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -461,10 +617,19 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		C7C2BF012700715A00789957 /* Build configuration list for PBXNativeTarget "VAComputingTask_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7C2BF022700715A00789957 /* Debug */,
+				C7C2BF032700715A00789957 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		C769D2E426F9E30A002E135B /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+		C7C2BEF32700563B00789957 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
 			requirement = {
@@ -475,9 +640,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		C769D2E526F9E30A002E135B /* IQKeyboardManagerSwift */ = {
+		C7C2BEF42700563B00789957 /* IQKeyboardManagerSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = C769D2E426F9E30A002E135B /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			package = C7C2BEF32700563B00789957 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
 			productName = IQKeyboardManagerSwift;
 		};
 /* End XCSwiftPackageProductDependency section */

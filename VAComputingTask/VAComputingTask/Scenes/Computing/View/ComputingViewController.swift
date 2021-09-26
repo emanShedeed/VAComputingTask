@@ -16,20 +16,30 @@ class ComputingViewController: UIViewController {
     @IBOutlet weak var operatorBtn: UIButton!
     @IBOutlet weak var operatorValidationLabel: UILabel!
     @IBOutlet weak var operatorAutoCombleteTV: UITableView!
+    @IBOutlet weak var resultTableViewHeight: NSLayoutConstraint!
+    @IBOutlet weak var resultTableView: FullHeightTableView!{ didSet{
+        resultTableView.contentSizeChanged = {
+            [weak self] newHeight in
+            self?.resultTableViewHeight.constant = newHeight
+        }
+        }
+    }
+    
     
     var placeHolder = ""
     var validOperators:[String] = ["+","-","*","/"]
-    
+    let supportedOpeartions = OperationContainer(operations: [Plus(),Minus(),Multiplication(),Division()])
+    var operationID = 1
+    var presenter: ComputingPresenter!
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        //      let supportedOpeartions = OperationContainer(operations: [Plus(),Minus(),Multiplication(),Division()])
-        //
-        //        let firstOp = Operation(operation: supportedOpeartions, operationType: "/", name: "Operation1", delayTime: 15.0, numbers: [1,2,3,4,6])
-        //       print(firstOp)
         setupView()
+        setupTableView()
+        presenter = ComputingPresenter(view: self)
     }
+    
     func setupView(){
         //textFields
         textFields.forEach { (textField) in
@@ -40,8 +50,6 @@ class ComputingViewController: UIViewController {
             textField.keyboardToolbar.nextBarButton.setTarget(self, action: #selector(nextBtnPressed))
             textField.keyboardToolbar.doneBarButton.setTarget(self, action: #selector(nextBtnPressed))
         }
-        operatorAutoCombleteTV.dataSource = self
-        operatorAutoCombleteTV.delegate = self
     }
     
     @IBAction func didTapCalculateButton(_ sender: Any) {
@@ -63,13 +71,26 @@ class ComputingViewController: UIViewController {
             operatorValidationLabel.isHidden = true
         }
         if isCompleted{
-            
+            let delay = Int(textFields[1].text ?? "0") ?? 0
+            let numbersArray = createArrayOfDoublesFromString(string: textFields[1].text ?? "")
+            let op = Operation(operation: supportedOpeartions, operationType: validOperators[operatorBtn.tag] , name: "Operation\(operationID)", delayTime: Double(delay) , numbers: numbersArray)
+            presenter.performOperation(obj: op)
+            operationID+=1
         }
     }
     @IBAction func didTapOperatorButton(_ sender: Any) {
         operatorAutoCombleteTV.isHidden = !( operatorAutoCombleteTV.isHidden)
         
     }
+    
+    func createArrayOfDoublesFromString(string: String )->[Double]{
+        guard string != "" else { return []}
+        let stringArray = textFields[0].text?.components(separatedBy: ",") ?? []
+        let doublesArray = stringArray.compactMap(Double.init)
+        return doublesArray
+    }
+    
+    
 }
 extension ComputingViewController: UITextFieldDelegate{
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -158,29 +179,10 @@ extension ComputingViewController: UITextFieldDelegate{
         return (text.count > 0, "Required Field.")
     }
 }
-extension ComputingViewController:UITableViewDelegate,UITableViewDataSource{
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return validOperators.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell : UITableViewCell!
-        cell = tableView.dequeueReusableCell(withIdentifier: "autoCompleteCell")
-        if cell == nil {
-            cell = UITableViewCell(style: .default, reuseIdentifier: "autoCompleteCell")
-        }
-        cell.textLabel?.text = validOperators[indexPath.row]
-        cell.textLabel?.textAlignment = .center
-        return cell
-    }
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        operatorValidationLabel.isHidden=true
-        operatorAutoCombleteTV.isHidden=true
-        
-        let  selectedName = validOperators[indexPath.row]
-        operatorBtn.setTitle(selectedName, for: .normal)
-        operatorBtn.tag = 1
-        operatorBtn.setTitleColor(UIColor.black, for: .normal)
+
+extension ComputingViewController: ComputingProtocol{
+    func reloadResultTVData() {
+        resultTableView.reloadData()
     }
     
 }

@@ -14,23 +14,18 @@ class Operation{
     let operation: OperationContainer
     let operationType: String
     var delayTime:Double
+    var remainingTime:Double
     var numbers:[Double]
+    var result:Double
     init(operation:OperationContainer,operationType:String, name:String,delayTime:Double,numbers:[Double]) {
         self.name = name
         self.operation = operation
         self.delayTime = delayTime
+        self.remainingTime = delayTime
         self.numbers = numbers
+        self.result = 0.0
         self.operationType = operationType
-        performOperation()
+//        performOperation()
     }
-    func performOperation() {
-        
-        DispatchQueue.global().asyncAfter(deadline: .now() + 0.5) {
-          
-            let result = self.operation.performOperation(numbers: self.numbers, type: self.operationType)
-            print(result)
-        }
-        
-    }
-    
+  
 }

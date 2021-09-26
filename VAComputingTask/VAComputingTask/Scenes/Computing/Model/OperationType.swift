@@ -34,7 +34,10 @@ struct Plus:OperationHnadlerProtocol {
 struct Minus:OperationHnadlerProtocol {
     var operationType = "-"
     func performOperation(numbers:[Double]) -> Double {
-        numbers.reduce(0) { $0 - $1 }
+        var array = numbers
+       array[0] = array[0] * -1
+        return array.reduce(0) { $0 - $1 }
+        
     }
 }
 struct Multiplication :OperationHnadlerProtocol {
@@ -48,7 +51,9 @@ struct Multiplication :OperationHnadlerProtocol {
 struct Division :OperationHnadlerProtocol {
     var operationType = "/"
     
-   func performOperation(numbers:[Double]) -> Double {
-        numbers.reduce(1) { $0 / $1 }
+    func performOperation(numbers:[Double]) -> Double {
+        var array = numbers
+        array[0] = 1/array[0]
+        return array.reduce(1) { $0 / $1 }
     }
 }
